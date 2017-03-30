@@ -23,7 +23,7 @@ setup( name = 'pkg2'
                      , "Programming Language :: Python :: 3"
                      ]
      , package_dir = { 'common' : '../common'}
-     , packages = ['common', 'pkg1']
+     , packages = ['common', 'pkg2']
      , setup_requires = [ "setuptools>=8.0"
                         , "setuptools-git-version>=1.0.3"
                         ]
