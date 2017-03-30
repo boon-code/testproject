@@ -10,6 +10,7 @@ __docformat__ = "restructuredtext en"
 
 
 sys.stderr.write("pkg1: {0}\n".format(os.getcwd()))
+sys.stderr.write("args: {0}\n".format(" ".join(sys.argv)))
 
 setup( name = 'pkg1'
      , version_format = "{tag}.dev{commitcount}+{gitsha}"
