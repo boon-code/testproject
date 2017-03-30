@@ -1,11 +1,15 @@
 from setuptools import setup
 import datetime
+import sys
+import os
 
 YEAR = datetime.date.today().year
 
 __author__ = "Manuel Huber"
 __docformat__ = "restructuredtext en"
 
+
+sys.stderr.write("pkg1: {0}\n".format(os.getcwd()))
 
 setup( name = 'pkg1'
      , version_format = "{tag}.dev{commitcount}+{gitsha}"
